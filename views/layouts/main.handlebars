@@ -23,7 +23,9 @@
   
     <main>
         <p>Here will produce posts</p>
-        {{body}}
+        {{#each posted as |bpost|}}
+        {{> postcard}}
+        {{/each}}
     </main>
 
 </body>
